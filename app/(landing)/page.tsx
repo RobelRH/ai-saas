@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-      welcome to the public landing page
+      AI SaaS application Visitors Page
       <div>
         <Link href="/sign-in">
           <Button>
