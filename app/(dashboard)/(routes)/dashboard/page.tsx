@@ -5,6 +5,9 @@ import { cn } from '@/lib/utils'
 import { ArrowRight, Code, ImageIcon, MessageSquare, Music, VideoIcon } from 'lucide-react'
 import React from 'react'
 import { useRouter } from 'next/navigation'
+import { UserButton } from '@clerk/nextjs'
+import { Button } from '@/components/ui/button'
+import UserAvatar from '@/components/user-avatar'
 
 const tools = [
   {
@@ -51,6 +54,10 @@ const DashboardPage = () => {
   return (
     <div>
       <div className='mb-8 space-y-4'>
+        <div className="px-10 py-5 flex justify-end space-x-3">
+          <a href="/">Back to Home Page</a>
+          <UserAvatar />
+        </div>
         <h2 className='text-2xl md:text-4xl font-bold text-center'>
           Welcome to Smart AI
         </h2>
