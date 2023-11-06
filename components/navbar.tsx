@@ -41,11 +41,11 @@ function Navbar() {
 
   return (
     <div>
-      <header>
+      <header className='bg-gray-900 text-white'>
         <nav className='flex justify-between items-center px-6 py-6'>
           {/* company name and logo */}
-          <div className='flex space-x-3 lg:flex-1'>
-            <img className='h-6' src="/vercel.svg" alt="" />
+          <div className='flex items-center space-x-3 lg:flex-1'>
+            <img className='h-12' src="/logo.png" alt="" />
             <span>company name</span>
           </div>
           {/* mobile menu button  */}
@@ -77,13 +77,13 @@ function Navbar() {
                   <div className='bg-white shadow-lg py-4 rounded-lg'>
                     {
                       productList.map((product) => (
-                        <div className='flex py-2 space-x-3 p-4  hover:bg-gray-50'>
+                        <div className='flex py-2 space-x-3 p-4  hover:bg-gray-50 hover:cursor-pointer'>
                           <div>
                             <product.icon className={`h-5 ${product.iconColor}`} />
                           </div>
                           <div>
-                            <h3 className='font-semibold'>{product.title}</h3>
-                            <p>{product.description}</p>
+                            <h3 className='text-black font-semibold'>{product.title}</h3>
+                            <p className="text-gray-700">{product.description}</p>
                           </div>
                         </div>
                       ))
