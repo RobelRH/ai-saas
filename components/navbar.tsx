@@ -19,11 +19,11 @@ import { LogOut } from 'lucide-react'
 import UserAvatar from './user-avatar'
 
 const listMenuItems = [
-  { name: "Home", href: "#" },
-  { name: "About", href: "#" },
-  { name: "Product", href: "#" },
-  { name: "Service", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Product", href: "/product" },
+  { name: "Service", href: "/service" },
+  { name: "Contact", href: "/contact" },
 ]
 
 const productList = [
@@ -42,7 +42,7 @@ function Navbar() {
   return (
     <div>
       <header className='bg-gray-900 text-white'>
-        <nav className='flex justify-between items-center px-6 py-6'>
+        <nav className='flex justify-between items-center px-6 py-1'>
           {/* company name and logo */}
           <div className='flex items-center space-x-3 lg:flex-1'>
             <img className='h-12' src="/logo.png" alt="" />
