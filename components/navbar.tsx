@@ -23,7 +23,6 @@ const listMenuItems = [
   { name: "About", href: "/about" },
   { name: "Product", href: "/product" },
   { name: "Service", href: "/service" },
-  { name: "Contact", href: "/contact" },
 ]
 
 const productList = [
@@ -99,7 +98,7 @@ function Navbar() {
               <UserAvatar />
               : <Link href="/sign-in">
                 <button className='border border-teal-500 rounded-lg px-3 py-1'>
-                  Login / Singup
+                  Login / Sing up
                 </button>
               </Link>}
 
