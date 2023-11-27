@@ -23,6 +23,7 @@ const listMenuItems = [
   { name: "About", href: "/about" },
   { name: "Product", href: "/product" },
   { name: "Service", href: "/service" },
+  { name: "Contact Us", href: "/contact"}
 ]
 
 const productList = [
