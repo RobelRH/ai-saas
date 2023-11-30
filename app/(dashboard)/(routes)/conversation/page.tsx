@@ -34,7 +34,7 @@ const ConversationPage = () => {
     const isLoading = form.formState.isSubmitting;
 
     const onSubmit = async (values: z.infer<typeof formSchema>) => {
-        console.log("clicked")
+        
         try {
             const userMessage: ChatCompletionMessageParam = {
                 role: "user",
@@ -105,7 +105,7 @@ const ConversationPage = () => {
                                 type="submit"
                                 size="icon"
                             >
-                                Generate
+                                Generate Conversation
                             </Button>
                         </form>
                     </Form>
