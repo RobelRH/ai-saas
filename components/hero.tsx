@@ -16,7 +16,7 @@ function HeroSection() {
                     </h1>
 
                     <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
-                        welcome to our platform, our application is based on chat gpt and is capable of generative images, conversation, videos and others.
+                        welcome to our platform, our app is based on chat gpt and is capable of generative images, conversation, videos and others.
                     </p>
 
                     <div className="mt-8 flex flex-wrap justify-center gap-4">
